@@ -14,6 +14,11 @@ if month < 10:
 else:
     month_str = str(month)
 
+if day < 10:
+    day = f"0{day}"
+else:
+    day = str(day)
+
 # Construct the link using variables
 link = f"https://nytimes.com/svc/wordle/v2/{year}-{month_str}-{day}.json"
 
